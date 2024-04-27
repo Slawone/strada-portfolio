@@ -1,0 +1,34 @@
+@import '../components/logo';
+@import '../components/list';
+@import '../components/burger';
+
+.header {
+  padding: 50px 0 49px;
+  border-bottom: 1px solid $white-color;
+
+  @media (width > 1023px) {
+    padding: 60px 0 59px;
+  }
+
+  @media (width > 1439px) {
+    padding: 55px 0 54px;
+  }
+
+  &__container {
+    @include flex;
+  }
+
+  &__list {
+    display: none;
+
+    @media (width > 759px) {
+      display: flex;
+    }
+  }
+
+  &__burger {
+    @media (width > 759px) {
+      display: none;
+    }
+  }
+}

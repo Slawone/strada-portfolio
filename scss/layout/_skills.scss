@@ -1,0 +1,50 @@
+@import "../components/section-title";
+
+.skills {
+  background: url("../../img/skills-bg.jpg") center/cover no-repeat;
+
+  &__title {
+    display: none;
+
+    @media (width > 767px) {
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    @media (width > 1023px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (width > 1023px) {
+      gap: 40px;
+    }
+  }
+
+  &__card {
+    width: 350px;
+    border: 2px solid $brown-color;
+    position: relative;
+
+    &-title {
+      color: $white-color;
+      background-color: $blue-color;
+      padding: 39px 0;
+      font-family: $font-montserrat;
+      font-size: 64px;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+
+      &--brown {
+        background-color: $brown-color;
+      }
+    }
+  }
+}

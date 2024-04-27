@@ -1,0 +1,35 @@
+@mixin fluid-text($min: 16, $max: 48, $screen: 1920) {
+  font-size: clamp(#{$min}px, #{$max / $screen * 100}vw, #{$max}px);
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin section-padding-y {
+  padding: 50px 0;
+
+  @media (width > 759px) {
+    padding: 75px 0;
+  }
+
+  @media (width > 1023px) {
+    padding: 100px 0;
+  }
+}

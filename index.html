@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strada - Портфолио</title>
+    <link href="./css/main.css" rel="stylesheet" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="#">@nickname</a>
+
+        <nav class="nav">
+          <ul class="list header__list">
+            <li class="list__item">
+              <a class="list__link" href="#projects">мои работы</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#projects">обо мне</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#projects">контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger header__burger">
+          <span class="burger__span"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">Я - ФРОНТЕНДЕР</h1>
+            <p class="hero__copy">
+              Какая-то очень интересная информация обо мне. Очень интересная
+              информация...
+            </p>
+            <a class="hero__link" href="#form">связаться со мной</a>
+          </div>
+          <div class="hero__img">
+            <img src="./img/avatar.jpg" alt="avatar" />
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="section-title skills__title">Я УМЕЮ</h2>
+
+          <div class="skills__box">
+            <article class="skills__card">
+              <img
+                class="skills__card-img"
+                src="./img/skills/html.svg"
+                alt="html"
+              />
+              <h4 class="skills__card-title">html</h4>
+            </article>
+            <article class="skills__card">
+              <img
+                class="skills__card-img"
+                src="./img/skills/css.svg"
+                alt="css"
+              />
+              <h4 class="skills__card-title skills__card-title--brown">css</h4>
+            </article>
+            <article class="skills__card">
+              <img
+                class="skills__card-img"
+                src="./img/skills/js.svg"
+                alt="js"
+              />
+              <h4 class="skills__card-title">js</h4>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="container">
+          <h2 class="section-title projects__title">Мои проекты</h2>
+
+          <div class="projects__box">
+            <article class="projects-card">
+              <div class="projects-card__img">
+                <img src="./img/projects/project.jpg" alt="project" />
+              </div>
+              <div class="projects-card__content">
+                <h3 class="projects-card__title">Работа 1</h3>
+                <p class="projects-card__copy">Краткое описание работы</p>
+              </div>
+            </article>
+            <article class="projects-card">
+              <div class="projects-card__img">
+                <img src="./img/projects/project.jpg" alt="project" />
+              </div>
+              <div class="projects-card__content">
+                <h3 class="projects-card__title">Работа 2</h3>
+                <p class="projects-card__copy">Краткое описание работы</p>
+              </div>
+            </article>
+            <article class="projects-card">
+              <div class="projects-card__img">
+                <img src="./img/projects/project.jpg" alt="project" />
+              </div>
+              <div class="projects-card__content">
+                <h3 class="projects-card__title">Работа 3</h3>
+                <p class="projects-card__copy">Краткое описание работы</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="application">
+        <div class="container application__container">
+          <h2 class="section-title application__title">Оставьте заявку</h2>
+
+          <form class="form">
+            <input class="form__input" type="text" placeholder="Ваше имя" />
+            <input class="form__input" type="email" placeholder="Ваша почта" />
+            <input class="form__input" type="tel" placeholder="Ваш телефон" />
+
+            <button class="form__reset-btn" type="reset">Очистить</button>
+            <button class="form__submit-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <div class="contacts__box">
+            <article class="contacts-card">
+              <h3 class="contacts-card__title">GitHub</h3>
+              <a class="contacts-card__link" href="#">ссылка</a>
+            </article>
+            <article class="contacts-card">
+              <h3 class="contacts-card__title">telegram</h3>
+              <a class="contacts-card__link" href="#">ссылка</a>
+            </article>
+            <article class="contacts-card">
+              <h3 class="contacts-card__title">телефон</h3>
+              <a class="contacts-card__link" href="#">ссылка</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="logo" href="#">@nickname</a>
+
+        <nav class="nav">
+          <ul class="list footer__list">
+            <li class="list__item">
+              <a class="list__link" href="#projects">мои работы</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#projects">обо мне</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#projects">контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

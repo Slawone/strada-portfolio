@@ -1,0 +1,15 @@
+.list {
+  flex-direction: column;
+  gap: 40px;
+
+  @media (width > 1023px) {
+    flex-direction: row;
+  }
+
+  &__link {
+    font-family: $font-inter;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration: underline;
+  }
+}

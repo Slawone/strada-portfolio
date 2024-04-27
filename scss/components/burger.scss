@@ -1,0 +1,28 @@
+.burger {
+  &__span {
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: $white-color;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 45px;
+      height: 5px;
+      background-color: $white-color;
+      position: absolute;
+    }
+
+    &::before {
+      left: 0;
+      top: -10px;
+    }
+
+    &::after {
+      left: 0;
+      bottom: -10px;
+    }
+  }
+}
