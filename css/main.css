@@ -331,7 +331,7 @@ section {
 }
 
 .skills {
-  background: url("../../img/skills-bg.jpg") center/cover no-repeat;
+  background: url("../img/skills-bg.jpg") center/cover no-repeat;
 }
 .skills__title {
   display: none;
